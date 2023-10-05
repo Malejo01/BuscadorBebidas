@@ -9,8 +9,10 @@ const BebidasProvider = ({children}) => {
     const [modal, setModal] = useState(false)
     const [bebidaID, setBebidaId] = useState(null)
     const [receta, setReceta] = useState({})
+    const [cargando, setCargando] = useState(false)
 
     useEffect (() => {
+        setCargando(true)
         const obtenerReceta = async () => {
             if (!bebidaID) return
             try {
@@ -18,8 +20,11 @@ const BebidasProvider = ({children}) => {
 
                 const {data} = await axios(url)
                 setReceta(data.drinks[0]) 
+                
             } catch (error) {
                 console.log(error)
+            } finally {
+                setCargando(false)
             }
         }
         obtenerReceta()
@@ -53,7 +58,8 @@ const BebidasProvider = ({children}) => {
                  handleModalClick,
                  modal,
                  handleBebidaIdClick,
-                 receta
+                 receta,
+                 cargando
                  }}>
             {children}
         </BebidasContext.Provider>
