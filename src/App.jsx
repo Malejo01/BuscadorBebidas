@@ -12,7 +12,8 @@ function App() {
       <BebidasProvider>
     <div>
       <header className="py-5">
-        <h1>Buscador de Bebidas</h1>
+        <h1>El ebrio fino</h1>
+        <p>Armate el trago que quieras con dos clicks</p>
       </header>
 
       <Container className='mt-5'> 
