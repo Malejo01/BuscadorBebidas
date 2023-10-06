@@ -15,7 +15,7 @@ const Bebida = ({bebida}) => {
                     alt={`Imagen de ${bebida.strDrink}`}
                 />
                 <Card.Body>
-                    <CardTitle>{bebida.strDrink}</CardTitle>
+                    <CardTitle style={{textOverflow:'clip'}}>{bebida.strDrink}</CardTitle>
                     <Button 
                         variant='warning' 
                         className='w-100 text-uppercase mt-2'

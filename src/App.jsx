@@ -5,6 +5,8 @@ import ModalBebida from './components/ModalBebida'
 import { CategoriasProvider } from './context/CategoriasProvider'
 import { BebidasProvider } from './context/BebidasProvider'
 import styles from './styles/App.css'
+
+
 function App() {
   
 
@@ -18,9 +20,9 @@ function App() {
         <p className='subtitulo'>Armate el trago que quieras con dos clicks</p>
       </header>
 
-      <Container className='mt-5' style={{}}> 
+      <Container> 
 
-        <Formulario/>
+        <Formulario />
         <ListadoBebidas/>
 
         <ModalBebida/>

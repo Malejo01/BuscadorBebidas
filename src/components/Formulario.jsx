@@ -2,6 +2,7 @@ import {useState} from 'react'
 import {Button, Form, Col, Row, Alert} from 'react-bootstrap'
 import useCategorias from '../hooks/useCategorias'
 import useBebidas from '../hooks/useBebidas'
+import barney from '../assets/barneygomez.png'
 
 
 function Formulario() {
@@ -28,11 +29,12 @@ function Formulario() {
     return (
         <Form
         onSubmit={handleSubmit}
+        style={{ backgroundColor:'#ffc107', padding:'15px', margin:'0', border:'10px', borderColor:'black'}}
         >
             {alerta && <Alert variant='danger' className='text-center'>{alerta}</Alert>}
             <Row>
-                <Col md={6}>
-                    <Form.Group>
+                <Col md={6} >
+                    <Form.Group >
                         <Form.Label htmlFor='nombre'> Nombre Bebida</Form.Label>
                         <Form.Control 
                             id='nombre'
@@ -72,12 +74,25 @@ function Formulario() {
                 </Col>
                 
             </Row>
+            <Row className='justify-content-center mt-3'>
+                <Col className=''>
+                    
+                </Col>
+                <Col md={3} style={{}}>
+                <img src={barney} style={{width:'100px', borderRadius:'25%',}}/>
+                </Col>
+                
+            </Row>
             <Row className='justify-content-end mt-3'>
-                <Col md={3}>
+                <Col className=''>
+                    
+                </Col>
+                <Col md={3} style={{}}>
                     <Button variant='danger'className='text-uppercase w-100' type='submit'>
                         Buscar Bebidas
                     </Button>
                 </Col>
+                
             </Row>
         </Form>
     )
