@@ -25,6 +25,7 @@ function App() {
 
         <ModalBebida/>
       </Container>
+      
     </div>
       </BebidasProvider>
     </CategoriasProvider>
