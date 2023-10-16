@@ -78,8 +78,8 @@ function Formulario() {
                 <Col className=''>
                     
                 </Col>
-                <Col md={3} style={{}}>
-                <img src={barney} style={{width:'100px', borderRadius:'25%',}}/>
+                <Col md={3} className='d-flex align-items-center justify-content-center'>
+                <img src={barney}   style={{width:'100px', borderRadius:'25%',}}/>
                 </Col>
                 
             </Row>

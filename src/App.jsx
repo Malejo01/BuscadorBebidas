@@ -4,6 +4,7 @@ import ListadoBebidas from './components/ListadoBebidas'
 import ModalBebida from './components/ModalBebida'
 import { CategoriasProvider } from './context/CategoriasProvider'
 import { BebidasProvider } from './context/BebidasProvider'
+import Footer from './components/Footer'
 import styles from './styles/App.css'
 
 
@@ -27,7 +28,7 @@ function App() {
 
         <ModalBebida/>
       </Container>
-      
+      <Footer/>
     </div>
       </BebidasProvider>
     </CategoriasProvider>

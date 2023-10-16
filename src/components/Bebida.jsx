@@ -14,7 +14,7 @@ const Bebida = ({bebida}) => {
                     src={bebida.strDrinkThumb}
                     alt={`Imagen de ${bebida.strDrink}`}
                 />
-                <Card.Body>
+                <CardBody>
                     <CardTitle style={{textOverflow:'clip'}}>{bebida.strDrink}</CardTitle>
                     <Button 
                         variant='warning' 
@@ -26,7 +26,7 @@ const Bebida = ({bebida}) => {
                         >
                         Ver receta
                     </Button>
-                </Card.Body>
+                </CardBody>
             </Card>
         </Col>
     )
