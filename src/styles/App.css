@@ -1,5 +1,54 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
+.subtitulo {
+  font-size: 1.4rem;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 0;
+}
+.subtitulo-footer {
+  font-size: 1.2rem;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 0;
+}
+.Footer-MadeBy{
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+h1{
+color: hsla(0, 0%, 100%, 0.9);
+font: normal 20px Varela Round, sans-serif; /* si pones el h1 era con 140 pixeles y en color negro */
+height: 140;
+left: 0;
+letter-spacing: 5px;
+margin:0;
+text-transform: uppercase;
+animation: move linear 4000ms infinite;  
+
+}
+
+.enlace{
+  text-decoration: underline;
+}
+
+.enlace:hover{
+  transform: scale(1.1) ;
+}
+
+.enlace-icono:hover{
+  transform: scale(1.3) ;
+}
+
+
+.Titulo-Footer{
+  font-size: 21px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Young Serif', serif;
+}
 
 .Imagen-Logo {
     width:120px;
@@ -11,7 +60,6 @@
 .Imagen-Logo:hover{
     transform: scale(1.1) ;
     filter:grayscale(90%);
-    
 }
 
 .Imagen-Formulario {
@@ -39,30 +87,6 @@
 
 
 
-
-
-
-
-
-
-
-.subtitulo {
-    font-size: 1.4rem;
-    font-family: 'Dancing Script', cursive;
-    margin-bottom: 0;
-}
-
-
-h1{
-  color: hsla(0, 0%, 100%, 0.9);
-  font: normal 20px Varela Round, sans-serif; /* si pones el h1 era con 140 pixeles y en color negro */
-  height: 140;
-  left: 0;
-  letter-spacing: 5px;
-  margin:0;
-  text-transform: uppercase;
-  animation: move linear 4000ms infinite;  
-}
 
 @keyframes move {
   0% {
