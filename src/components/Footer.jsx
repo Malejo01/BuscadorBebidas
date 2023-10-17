@@ -7,8 +7,8 @@ function Footer() {
             <footer className='text-white py-3 bg-dark'>
                 <div className='container'>
                     <div className='row'>
-                            <div className='col-12 col-md-3 d-flex align-items-center justify-content-center'> 
-                                <img src={barney} className='mx-2' height='150' style={{borderRadius:'25%'}}/>
+                            <div className='col-12 col-md-3 d-flex align-items-center justify-content-center Imagen-Footer'> 
+                                <img src={barney} className='mx-2' height='150'/>
                             </div>
                         
                             <ul className='col-12 col-md-3 list-unstyled'>

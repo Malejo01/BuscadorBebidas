@@ -2,8 +2,8 @@ import {useState} from 'react'
 import {Button, Form, Col, Row, Alert} from 'react-bootstrap'
 import useCategorias from '../hooks/useCategorias'
 import useBebidas from '../hooks/useBebidas'
-import barney from '../assets/barneygomez.png'
 import moe from '../assets/moe.png'
+import styles from '../styles/App.css'
 
 
 function Formulario() {
@@ -76,10 +76,10 @@ function Formulario() {
                 
             </Row>
             <Row className='justify-content-center mt-3'>
-                <Col className=''>
+                <Col className='Imagen-Formulario'>
                     
                 </Col>
-                <Col md={3} className='d-flex align-items-center justify-content-center'>
+                <Col md={3} className='d-flex align-items-center justify-content-center Imagen-Formulario'>
                 <img src={moe}   style={{width:'160px', borderRadius:'25%'}}/>
                 </Col>
                 
