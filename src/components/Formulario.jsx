@@ -3,6 +3,7 @@ import {Button, Form, Col, Row, Alert} from 'react-bootstrap'
 import useCategorias from '../hooks/useCategorias'
 import useBebidas from '../hooks/useBebidas'
 import barney from '../assets/barneygomez.png'
+import moe from '../assets/moe.png'
 
 
 function Formulario() {
@@ -79,7 +80,7 @@ function Formulario() {
                     
                 </Col>
                 <Col md={3} className='d-flex align-items-center justify-content-center'>
-                <img src={barney}   style={{width:'100px', borderRadius:'25%',}}/>
+                <img src={moe}   style={{width:'160px', borderRadius:'25%'}}/>
                 </Col>
                 
             </Row>
