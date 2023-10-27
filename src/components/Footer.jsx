@@ -94,6 +94,7 @@ function Footer() {
                                 </svg>
                             </div>
                             <div className='container d-flex justify-content-center'>
+                                <p>https://drive.google.com/drive/folders/1WBmXHdAPP1ohsE5ES1JcJ3isX9lOlF2G</p>
                             
                             </div>
                     </div>
