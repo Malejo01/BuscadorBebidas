@@ -1,4 +1,4 @@
-import {Modal, Image} from 'react-bootstrap' 
+import {Modal, Image, Button} from 'react-bootstrap' 
 import useBebidas from '../hooks/useBebidas'
 
 const  ModalBebida = () =>{
@@ -19,6 +19,7 @@ const  ModalBebida = () =>{
     }
     return (
         !cargando && (<Modal show={modal} onHide={handleModalClick}>
+            
             <Image 
                 src={receta.strDrinkThumb}
                 alt={`Imagen de la receta de ${receta.strDrink}`}
@@ -34,6 +35,14 @@ const  ModalBebida = () =>{
                         {mostrarIngredientes()}
                     </div>
                 </Modal.Body>
+                <div className="">
+                    <Button variant='warning' 
+                        className='w-100 text-uppercase mt-2 mb-4'
+                        onClick={handleModalClick} 
+                        >
+                        Volver
+                    </Button>
+                </div>
         </Modal>
         )
     )
